@@ -1,0 +1,63 @@
+1. Install Flutter
+	1. Download Flutter SDK:
+		Visit Flutter's official website and download the appropriate Flutter SDK for your operating system.
+
+	2. Extract the Flutter SDK:
+		Extract the downloaded zip file to a desired location (e.g., C:\flutter on Windows or /Users/yourname/flutter on macOS).
+
+	3. Add Flutter to PATH:
+		Add the flutter/bin directory to your system's PATH.
+			-> Windows:
+				Search for "Environment Variables" in the Start menu.
+				Edit the Path variable and add C:\flutter\bin.
+			-> macOS/Linux:
+				Open the terminal and edit the shell configuration file (e.g., .bashrc, .zshrc, or .bash_profile): 
+				export PATH="$PATH:/path-to-flutter/bin"
+				Save and run source <file> to refresh.
+	4. Verify Flutter Installation:
+
+		Open a terminal and run:
+		flutter doctor
+		This checks your environment and lists missing dependencies.
+
+2. Install Android Studio
+	1. Download and Install Android Studio:
+		Visit Android Studio's official website and download the latest version.
+		Follow the installation instructions for your operating system.
+
+	2. Install Android SDK and Tools:
+		Launch Android Studio.
+		Open SDK Manager:
+		   Go to File > Settings > Appearance & Behavior > System Settings > Android SDK.
+		Install the recommended Android SDK packages (e.g., Android SDK, SDK Platform Tools).
+
+	3. Set Up Virtual Device (AVD):
+		Open the AVD Manager from Tools > Device Manager.
+		Create a new virtual device and download the required system image.
+
+3. Configure Flutter Plugin in Android Studio
+	1. Install Flutter Plugin:
+		Go to File > Settings > Plugins.
+		Search for Flutter and install the plugin.
+		Android Studio will prompt you to install the Dart plugin. Install it as well.
+
+	2. Restart Android Studio:
+		After installation, restart Android Studio to activate the plugins.
+
+4. Create and Run a Flutter Project
+	1. Create a New Flutter Project:
+		Go to File > New > New Flutter Project.
+		Select Flutter Application.
+		Specify the Flutter SDK path, project name, and location. Click Finish.
+
+	2. Run the Flutter App:
+		Connect a physical device or use an AVD.
+		Click the Run button (▶️) in the toolbar to build and run your Flutter app.
+
+5. Additional Configurations
+	1. Accept Licenses:
+		Run the following command to accept Android licenses:
+		   flutter doctor --android-licenses
+	2. Verify Setup:
+		Run flutter doctor again to ensure everything is properly configured.
+		If there are issues, the output will provide suggestions to resolve them.
